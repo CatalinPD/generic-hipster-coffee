@@ -13,6 +13,9 @@ body {
   flex-direction: column;
   width: 100vw;
   margin: 0;
+  @media screen and (min-width: 800px) {
+    margin-left: 40px;
+  }
 }
 
 ul,
@@ -50,6 +53,16 @@ header {
     font-size: 20px;
     color: rgb(191, 191, 191);
   }
+  a {
+    color: rgb(191, 191, 191);
+    text-decoration: none;
+  }
+  a:visited {
+    color: rgb(191, 191, 191);
+  }
+  a:hover {
+    color: rgb(119, 119, 119);
+  }
   a.active {
     color: black;
   }
@@ -63,9 +76,20 @@ header {
     flex-direction: row;
     justify-content: space-around;
   }
+}
 
-  h1 {
-    font-weight: 200;
+h1,
+h2 {
+  font-weight: 200;
+}
+
+.info {
+  display: flex;
+  flex-flow: column wrap;
+  height: 50vh;
+  padding-left: 40px;
+  ul {
+    padding-left: 0;
   }
 }
 
@@ -92,7 +116,8 @@ footer {
     color: rgb(191, 191, 191);
   }
   li {
-    margin-inline: 20px;
+    text-align: center;
+    margin-inline: 15px;
   }
   a {
     color: rgb(191, 191, 191);
@@ -109,5 +134,18 @@ footer {
   }
   h3 {
     font-size: 25px;
+  }
+}
+img {
+  width: 100vw;
+  height: 13em;
+}
+
+@media (min-width: 800px) {
+  img {
+    width: 40vw;
+    height: 20em;
+    margin-left: 0;
+    margin-bottom: 60px;
   }
 }
