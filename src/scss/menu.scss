@@ -7,6 +7,13 @@ html {
     box-sizing: inherit;
   }
   
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: 0;
+    }
+
   footer {
     height: 348px;
     background-color: rgb(82, 82, 82);
@@ -57,13 +64,6 @@ nav {
     font-weight: 300;
 }
 
- menu-container {
-        height: 200px;
-        background-color: aquamarine;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between
- }           
 
  ul,
 li {
@@ -113,4 +113,48 @@ header {
     flex-direction: row;
     justify-content: space-around;
   }
+}
+
+.menu-cards {
+    height: 200px; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+
+.ESPRESSO-COFFEE {
+    // height: 70px; 
+    width: 40%; 
+    background-color: red;
+}
+
+.FILTER-COFFEE {
+    // height: 70px; 
+    width: 40%; 
+    background-color: red
+}
+
+.ICED {
+    // height: 70px; 
+    width: 40%; 
+    background-color: red;
+}
+
+.HOT {
+    // height: 70px; 
+    width: 40%; 
+    background-color: red;
+}
+
+.NON-ALCHOOLIC {
+    // height: 100px; 
+    background-color: aquamarine; 
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.item-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
